@@ -24,8 +24,8 @@ This script handles the synchronization of internal and external signals, aligni
 ```bash
    python Signal_sync.py --input_dir <path_to_raw_data> --output_dir <path_to_synced_data>
 ```
--`--input_dir`: Path to the directory containing the unsynchronised signal data. Default value is `../tocomon_unsynced"`.
--`--output_dir`: Path to the directory where synchronised data will be saved. Default value is `../tocomon_synced`. A CSV file (`signals_sync.csv`) with the synchronisation selections is saved also in this directory  upon script completion.
+- `--input_dir`: Path to the directory containing the unsynchronised signal data. Default value is `../tocomon_unsynced"`.
+- `--output_dir`: Path to the directory where synchronised data will be saved. Default value is `../tocomon_synced`. A CSV file (`signals_sync.csv`) with the synchronisation selections is saved also in this directory  upon script completion.
 
 2. **Signal_feature_extraction.py** (Signal feature extraction):
 This script performs feature extraction on the synchronized signals, generating time, frequency, and time-frequency-domain features (e.g., RMS, kurtosis, peak-to-peak, wavelet energy) that can be used for tool condition monitoring (TCM) analysis.
@@ -33,7 +33,7 @@ This script performs feature extraction on the synchronized signals, generating 
 ```bash
 python Signal_feature_extraction.py --input_dir <path_to_synced_data>
 ```
--`--input_dir`: Path to the directory containing synchronized data. Default value is `../tocomon_synced`. A CSV file (`signals_stats.csv`) with the extracted features is saved in this directory upon script completion.
+- `--input_dir`: Path to the directory containing synchronized data. Default value is `../tocomon_synced`. A CSV file (`signals_stats.csv`) with the extracted features is saved in this directory upon script completion.
 
 3. **Signal_evaluator.py** (Signal evaluation):
 This script evaluates the extracted features against tool wear annotations, providing insights into which features show strong correlations with tool wear, and is useful for understanding the most relevant metrics for TCM.
@@ -41,7 +41,7 @@ This script evaluates the extracted features against tool wear annotations, prov
 ```bash
 python Signal_evaluator.py --features_path <path_to_features_file>
 ```
--`--features_path`: Path to the file containing the extracted features. Default value is `../tocomon_synced/signals_stats.csv`.
+- `--features_path`: Path to the file containing the extracted features. Default value is `../tocomon_synced/signals_stats.csv`.
 
 # Example Workflow
 1. **Step 1**: Synchronize Signals
