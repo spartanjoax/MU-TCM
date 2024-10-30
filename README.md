@@ -3,13 +3,12 @@
     <img src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue?style=for-the-badge&logo=python" />
 </a>
 
-Technical validation code for the  face-milling dataset.
 This repository provides the technical validation scripts for the TOol COndition MONitoring (TOCOMON) face-milling dataset, 
 enabling reproducible data processing, synchronization, and feature extraction for tool condition monitoring (TCM) in milling processes.
 
 # Acknowledgements
-This work was developed at the [Software and systems engineering](https://www.mondragon.edu/en/research-transfer/engineering-technology/research-and-transfer-groups/-/mu-inv-mapping/grupo/ingenieria-del-sw-y-sistemas) 
-and the [High-performance machining](https://www.mondragon.edu/en/research-transfer/engineering-technology/research-and-transfer-groups/-/mu-inv-mapping/grupo/mecanizado-de-alto-rendimiento) 
+This work was developed at the [Software and systems engineering](https://www.mondragon.edu/en/research-transfer/engineering-technology/research-and-transfer-groups/software-systems-engineering) 
+and the [High-performance machining](https://www.mondragon.edu/en/research-transfer/engineering-technology/research-and-transfer-groups/high-performance-machining) 
 groups at Mondragon University, as part of the [Digital Manufacturing and Design Training Network](https://dimanditn.eu/es/home).
 
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 814078.
@@ -17,7 +16,7 @@ This project has received funding from the European Union’s Horizon 2020 resea
 # Installation
 1. Fork the project.
 2. Clone the project.
-3. Follow the instructions in the [link](#usage) section.
+3. Follow the instructions in the [Usage](#usage) section.
 
 # Usage
 This code is meant to be used alongside the TOCOM face-milling dataset. This repository provides three main scripts to process and evaluate the TOCOMON dataset. 
@@ -30,7 +29,7 @@ aligned for further analysis.
 ```bash
    python Signal_sync.py --input_dir <path_to_raw_data> --output_dir <path_to_synced_data>
 ```
-- `--input_dir`: Path to the directory containing the unsynchronised signal data. Default value is `../tocomon_unsynced"`.
+- `--input_dir`: Path to the directory containing the unsynchronised signal data. Default value is `../tocomon_unsynced`.
 - `--output_dir`: Path to the directory where synchronised data will be saved. Default value is `../tocomon_synced`. A CSV file (`signals_sync.csv`) with the synchronisation selections is saved also in this directory  upon script completion.
 
 2. **Signal_feature_extraction.py** (Signal feature extraction):
