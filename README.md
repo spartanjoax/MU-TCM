@@ -45,12 +45,15 @@ python Signal_evaluator.py --features_path <path_to_features_file>
 
 # Example Workflow
 1. **Step 1**: Synchronize Signals
+
 Run Signal_sync.py to align raw signals from different sources, creating synchronized files ready for feature extraction.
 
 2. **Step 2**: Extract Features
+
 Use Signal_feature_extraction.py to process synchronized signals and extract a range of relevant features.
 
 3. **Step 3**: Evaluate Features
+
 Finally, apply Signal_evaluator.py to analyze the extracted features against tool wear data, identifying metrics most associated with tool wear progression.
 
 This sequence allows users to go from raw data to insights on the most relevant features for tool condition monitoring in milling processes.
