@@ -78,12 +78,15 @@ This sequence allows users to go from raw data to insights on the most relevant 
 If you use this code in your own work, please use the following bibtex entries:
 
 ```bibtex
-@misc{tocom2024, 
-  title={Technical validation code for TOCOMON -- Face-milling dataset for smart tool condition monitoring}, 
-  author={Peralta Abadia, Jose Joaquin}, 
-  year={2024}, 
-  publisher={GitHub}, 
-  howpublished={\url{https://github.com/spartanjoax/TOCOM}} }
+@software{Peralta_Abadia_TOCOM_2024,
+  author = {Peralta Abadia, Jose Joaquin},
+  license = {AGPL-3.0},
+  month = oct,
+  title={{Technical validation code for the TOCOMON face-milling dataset}}, 
+  url = {https://github.com/spartanjoax/TOCOM},
+  version = {1.0},
+  year = {2024}
+}
   
 @article{peralta2025tocomon,
   title={{TOCOMON -- Face-milling dataset for smart tool condition monitoring}},
