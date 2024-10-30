@@ -1,0 +1,20 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: TOCOM
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jose Joaquin
+    family-names: Peralta Abadia
+    orcid: 'https://orcid.org/0000-0003-0261-6792'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14012462
+repository-code: 'https://github.com/spartanjoax/TOCOM'
+license: AGPL-3.0
+version: '1.0'
+date-released: '2024-10-30'
