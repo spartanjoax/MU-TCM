@@ -86,7 +86,7 @@ If you use this code in your own work, please use the following bibtex entries:
   url = {https://github.com/spartanjoax/TOCOM},
   version = {1.0},
   year = {2024},
-  doi={https://doi.org/10.5281/zenodo.14012462}}
+  doi={https://doi.org/10.5281/zenodo.14012462}
 }
   
 @article{peralta2025tocomon,
