@@ -1,8 +1,6 @@
 # Description
-<a href="https://github.com/spartanjoax/TOCOM">
-    <img src="https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue?style=for-the-badge&logo=python" />
-</a>
-<a href="https://doi.org/10.5281/zenodo.14012462"><img src="https://zenodo.org/badge/880366201.svg" alt="DOI"></a>
+![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
+[![DOI](https://zenodo.org/badge/880366201.svg)](https://doi.org/10.5281/zenodo.14012462)
 
 This repository provides the technical validation scripts for the TOol COndition MONitoring (TOCOMON) face-milling dataset, 
 enabling reproducible data processing, synchronization, and feature extraction for tool condition monitoring (TCM) in milling processes.
