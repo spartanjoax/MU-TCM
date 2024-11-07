@@ -1,8 +1,22 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct 10 17:52:32 2023
+Copyright (C) 2024, José Joaquín Peralta Abadía / Mondragon Unibertsitatea
+This program is free software: you can redistribute it and/or modify it under the terms of
+the GNU Affero General Public License as published by the Free Software Foundation, either
+version 3 of the License, or (at your option) any later version.
 
-@author: jjperalta
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this
+program. If not, see <https://www.gnu.org/licenses/>.
+
+DISCLAIMER:
+This software is provided "as-is" without any express or implied warranties, including but
+not limited to any implied warranties of merchantability, fitness for a particular purpose,
+or non-infringement. The authors are not liable for any damages or issues that arise from
+using, modifying, or distributing this software.
 """
 
 import os
@@ -19,6 +33,15 @@ import scipy.signal
 
 
 def synchronize_signals(input_dir, output_dir):
+    """
+    Synchronise internal and external signals, aligning them based on peak analysis to ensure 
+    that all data sources are accurately aligned for further analysis.
+
+    Args:
+        input_dir (str): Path to the directory containing the unsynchronised signal data.
+        output_dir (str): Path to the directory where synchronised data will be saved.
+    """
+
     # Ensure the input directory exists
     if not os.path.exists(input_dir):
         print(f"Error: The input directory '{input_dir}' does not exist.")
@@ -543,10 +566,10 @@ if __name__ == "__main__":
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Synchronize internal and external signals.")
     parser.add_argument('--input_dir', 
-        default="../tocomon_unsynced",
+        default="../signals_unsynced",
         help="Path to the directory containing unsynchronised signal data.")
     parser.add_argument('--output_dir', 
-        default="../tocomon_synced",
+        default="../signals_synced",
         help="Path to the directory where synchronised data will be saved.")
 
     # Parse arguments

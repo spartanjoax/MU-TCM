@@ -1,8 +1,22 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Oct 23 11:44:04 2024
+Copyright (C) 2024, José Joaquín Peralta Abadía / Mondragon Unibertsitatea
+This program is free software: you can redistribute it and/or modify it under the terms of
+the GNU Affero General Public License as published by the Free Software Foundation, either
+version 3 of the License, or (at your option) any later version.
 
-@author: jjperalta
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this
+program. If not, see <https://www.gnu.org/licenses/>.
+
+DISCLAIMER:
+This software is provided "as-is" without any express or implied warranties, including but
+not limited to any implied warranties of merchantability, fitness for a particular purpose,
+or non-infringement. The authors are not liable for any damages or issues that arise from
+using, modifying, or distributing this software.
 """
 
 import matplotlib.pyplot as plt
@@ -22,6 +36,15 @@ color=['hls','Plasma']
 
 
 def analyse_signals(features_path):
+    """
+    Evaluates the extracted features against tool wear annotations, providing insights into which 
+    features show strong correlations with tool wear, and is useful for understanding the most 
+    relevant metrics for TCM.
+
+    Args:
+        features_path (str): Path to the file containing the extracted features.
+    """
+
     # Ensure the input directory exists
     if not os.path.exists(features_path):
         print(f"Error: The input file '{features_path}' does not exist.")
@@ -251,7 +274,7 @@ if __name__ == "__main__":
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Evaluates the extracted features against tool wear annotations.")
     parser.add_argument('--features_path', 
-        default="../tocomon_synced/signals_stats.csv",
+        default="../signals_synced/signals_stats.csv",
         help="Path to the file containing the extracted features.")
 
     # Parse arguments
