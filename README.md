@@ -1,5 +1,5 @@
 # Description
-![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
+![versions](https://upload.wikimedia.org/wikipedia/commons/6/62/Blue_Python_3.11%2B_Shield_Badge.svg)
 [![DOI](https://zenodo.org/badge/880366201.svg)](https://doi.org/10.5281/zenodo.14012462)
 
 This repository provides the technical validation scripts for the Mondragon Unibertsitatea tool condition monitoring (MU-TCM) face-milling dataset, 
