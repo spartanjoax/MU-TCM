@@ -13,7 +13,7 @@ authors:
     orcid: 'https://orcid.org/0000-0003-0261-6792'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.14012462
+    value: 10.5281/zenodo.14055658
 repository-code: 'https://github.com/spartanjoax/MU-TCM'
 license: AGPL-3.0
 version: '1.1'

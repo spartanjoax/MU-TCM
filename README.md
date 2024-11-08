@@ -1,6 +1,6 @@
 # Description
 ![versions](https://upload.wikimedia.org/wikipedia/commons/6/62/Blue_Python_3.11%2B_Shield_Badge.svg)
-[![DOI](https://zenodo.org/badge/880366201.svg)](https://doi.org/10.5281/zenodo.14012462)
+[![DOI](https://zenodo.org/badge/880366201.svg)](https://doi.org/10.5281/zenodo.14055658)
 
 This repository provides the technical validation scripts for the Mondragon Unibertsitatea tool condition monitoring (MU-TCM) face-milling dataset, 
 enabling reproducible data processing, synchronisation, and feature extraction for TCM in milling processes.
@@ -83,7 +83,7 @@ If you use this code in your own work, please use the following bibtex entries:
   url = {https://github.com/spartanjoax/MU-TCM},
   version = {1.1},
   year = {2024},
-  doi={https://doi.org/10.5281/zenodo.14012462}
+  doi={https://doi.org/10.5281/zenodo.14055658}
 }
   
 @article{peralta2025tocomon,
