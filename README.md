@@ -13,7 +13,11 @@ This project has received funding from the European Union’s Horizon 2020 resea
 # Installation
 1. Fork the project.
 2. Clone the project.
-3. Follow the instructions in the [Usage](#usage) section.
+3. Install requirements with PIP
+```bash
+pip install -r requirements.txt
+```
+4. Follow the instructions in the [Usage](#usage) section.
 
 # Usage
 This code is meant to be used alongside the MU-TCM face-milling dataset. This repository provides three main scripts to process and evaluate the dataset. Below are the instructions for each script:
