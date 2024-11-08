@@ -24,7 +24,6 @@ import signal_helper as sh
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import json
 import ntpath
 from scipy.stats import kurtosis, skew
 import argparse
@@ -58,10 +57,6 @@ def extract_features(input_dir):
     files = sh.get_file_list(root=input_dir, pattern='*.mat')
     print(f'File quantity: {len(files)}')
 
-    height_rpm=[-196,-396.5,-794.5]
-    height=2400
-    height_e=0
-
     signals_cnc=[
         'SREAL',
         'CV3_S',
@@ -93,13 +88,6 @@ def extract_features(input_dir):
         
         mat, rpm_avg = sh.load_and_plot_file(file,freq_i=1,freq_e=1)
         file = ntpath.basename(file)
-        
-        if rpm_avg < 200:
-            height=height_rpm[0]
-        elif rpm_avg < 400:
-            height=height_rpm[1]
-        else:
-            height=height_rpm[2]
             
         file_stats = {
             '_file_name' : file,
@@ -142,7 +130,6 @@ def extract_features(input_dir):
             print(f'========== Analysing {label}')
                     
             signal=mat[label]
-            length_to_peak=0
             
             fig, axs = plt.subplots(2, 1, figsize=(20,20))
             axs[0].plot(signal, label=label+'_full')
@@ -173,7 +160,6 @@ def extract_features(input_dir):
             plt.show()
             
             ask_range = True
-            ask_peaks = True
             
             if (start != 0 or end != len(signal)) and len(peaks_cnc) > 0:
                 secs = input(f'Use the same start ({start}) and end ({end}) as previous signals? [Y] or N: ')
@@ -218,7 +204,6 @@ def extract_features(input_dir):
             file_stats[f'{label}_start'] = start
             file_stats[f'{label}_end'] = end
             
-            counter = 0
             print(f'Extracting features from at {start} to end at {end} for {label} with length {len(signal)}')
             
             file_stats[f'{label}_rms'] = sh.rms(signal)
@@ -276,7 +261,6 @@ def extract_features(input_dir):
                 plt.show()
                     
                 ask_range = True
-                ask_peaks = True
                 
                 if (start != 0 or end != len(signal)) and len(peaks_ext) > 0:                
                     secs = input(f'Use the same start ({start}) and end ({end}) as previous signals? [Y] or N: ')
@@ -321,7 +305,6 @@ def extract_features(input_dir):
                 file_stats[f'{label}_start'] = start
                 file_stats[f'{label}_end'] = end
                 
-                counter = 0
                 freq=file_stats['Hz_AE' if 'AE' in label else 'Hz_F']
                 print(f'Extracting features from start at {start} to end at {end} for {label} with length {len(signal)}')
                     

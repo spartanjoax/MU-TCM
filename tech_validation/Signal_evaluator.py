@@ -19,8 +19,10 @@ or non-infringement. The authors are not liable for any damages or issues that a
 using, modifying, or distributing this software.
 """
 
+import os
 import matplotlib.pyplot as plt
 import seaborn as sns
+import ntpath
 import argparse
 
 from scipy.stats import pearsonr, spearmanr
@@ -30,7 +32,6 @@ import numpy as np
 
 sns.set_context("paper")
 sns.set(font_scale = 1)
-#bgcolor='#EAEAF0'
 bgcolor=''
 color=['hls','Plasma']
 
@@ -53,15 +54,10 @@ def analyse_signals(features_path):
     print('====================================================')
     print(f"Analysing features from '{features_path}'...")
 
-    sampling_rate = 250
-    mother_wavelet = 'db8'
-    wavelet_level = 10
-
     material_list = ['CastIron.GG30','StainlessSteel.316L']
     signal_list = ['CV3_X','CV3_Y','CV3_Z','TV2_S','TV2_X','TV2_Y',
                 'TV2_Z','TV50','TV51','AE_F','AE_RMS','Ax','Ay','Az','Fx','Fy','Fz']
     stat_list = ['rms','var','max','kurt','skew','ptp','speckurt','specskew','wavenergy']
-    data_list = [d+'_'+s for d in signal_list for s in stat_list]
 
     data_file = pd.read_csv(features_path, sep=';',decimal='.', index_col=0)
     data_file['InsertEdge'] = [x.split('_')[0] for x in data_file['_file_name']]
@@ -141,7 +137,6 @@ def analyse_signals(features_path):
         for stat in stat_list:
             variable = signal+'_'+stat
             print(variable)
-            #x = 'i_DRV_TV2_X_max'
             row = int(counter / 3)
             column = int(counter % 3)
             ax = axs[row, column]
@@ -169,9 +164,6 @@ def analyse_signals(features_path):
                             ax.plot([x[len(x)-1]], [y[len(x)-1]], marker='_', markersize=20, color=colors_palette[0][j])
                         else:
                             ax.plot([x[0]], [y[0]], marker=markers[j], markersize=5, color=colors_palette[0][j])
-                    
-                        # Plot the points with different colors and markers
-                        #ax.scatter(x, y, c=colors_palette[0][j], marker=markers[j], alpha=0.7, s=50)
                     j += 1
                 
                 # Add mean line by condition
