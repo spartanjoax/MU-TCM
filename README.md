@@ -76,18 +76,19 @@ If you use this code in your own work, please use the following bibtex entries:
 
 ```bibtex
 @software{Peralta_Abadia_MU-TCM_2024,
-  author = {Peralta Abadia, Jose Joaquin},
+  author = {Peralta Abadia, Jose Joaquin and Cuesta Zabaljauregui, Mikel and Larrinaga Barrenechea, Felix},
   license = {AGPL-3.0},
-  month = oct,
+  month = mar,
   title={{Technical validation code for the MU-TCM face-milling dataset}}, 
   url = {https://github.com/spartanjoax/MU-TCM},
-  version = {1.1},
-  year = {2024},
-  doi={https://doi.org/10.5281/zenodo.14055658}
+  version = {1.2},
+  year = {2025},
+  publisher    = {Zenodo},
+  doi={https://doi.org/10.5281/zenodo.14012462}
 }
   
 @article{peralta2025tocomon,
-  title={{MU-TCM face-milling dataset for smart tool condition monitoring}},
+  title={{Mondragon Unibertsitatea face-milling dataset for smart tool condition monitoring}},
   author={Peralta Abadia, Jose Joaquin and Cuesta Zabaljauregui, Mikel and Larrinaga Barrenechea, Felix},
   journal={...pending...},
   year={2025}
