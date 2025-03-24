@@ -11,10 +11,16 @@ authors:
   - given-names: Jose Joaquin
     family-names: Peralta Abadia
     orcid: 'https://orcid.org/0000-0003-0261-6792'
+  - given-names: Mikel
+    family-names: Cuesta Zabaljauregui
+    orcid: 'https://orcid.org/0000-0001-6419-5394'
+  - given-names: Felix
+    family-names: Larrinaga Barrenechea
+    orcid: 'https://orcid.org/0000-0003-1971-0048'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.14055658
+    value: 10.5281/zenodo.14012462
 repository-code: 'https://github.com/spartanjoax/MU-TCM'
 license: AGPL-3.0
-version: '1.1'
-date-released: '2024-10-30'
+version: '1.2'
+date-released: '2025-03-24'
