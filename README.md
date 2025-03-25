@@ -8,7 +8,7 @@ enabling reproducible data processing, synchronisation, and feature extraction f
 # Acknowledgements
 This work was developed at the [Software and systems engineering](https://www.mondragon.edu/en/research-transfer/engineering-technology/research-and-transfer-groups/software-systems-engineering) and the [High-performance machining](https://www.mondragon.edu/en/research-transfer/engineering-technology/research-and-transfer-groups/high-performance-machining) groups at Mondragon University, as part of the [Digital Manufacturing and Design Training Network](https://dimanditn.eu/es/home).
 
-This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 814078 and by the Department of Education, Universities and Research of the Basque Government under the projects Ikerketa Taldeak (Grupo de Ingeniería de Software y Sistemas IT1519-22 and Grupo de investigación de Mecanizado de Alto Rendimiento IT1443-22).
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 814078 (DIMAND) and by the Department of Education, Universities and Research of the Basque Government under the projects Ikerketa Taldeak (Grupo de Ingeniería de Software y Sistemas IT1519-22 and Grupo de investigación de Mecanizado de Alto Rendimiento IT1443-22).
 
 # Installation
 1. Fork the project.
